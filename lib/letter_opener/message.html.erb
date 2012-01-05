@@ -84,6 +84,6 @@
 <% if type == "plain" %>
   <pre id="message_body"><%= CGI.escapeHTML(body) %></pre>
 <% else %>
-  <%= raw body %>
+  <%= body.html_safe %>
 <% end %>
 
